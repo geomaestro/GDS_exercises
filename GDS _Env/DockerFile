@@ -1,0 +1,11 @@
+FROM baseImage
+docker pull darribas/gds_py:10.0;
+
+COPY gds-flavour is one of gds_py, gds, gds_dev
+
+RUN docker run --rm -ti -p 8888:8888 -v "/workspaces/GDS_exercises/GDS _Env":/home/jovyan/work darribas/gds_py:10.0
+
+COPY cd "/path/to/folder/with/Dockerfile"
+
+
+
